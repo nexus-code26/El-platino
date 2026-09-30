@@ -1,0 +1,186 @@
+/* ESTILO PREMIUM: GLASSMORPHISM (EFECTO VIDRIO) */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #311b92 100%);
+    background-attachment: fixed;
+    color: #e2e8f0;
+    margin: 0;
+    padding: 30px 15px;
+    line-height: 1.7;
+    min-height: 100vh;
+}
+
+.contenedor {
+    max-width: 950px;
+    margin: 0 auto;
+    background: rgba(30, 41, 59, 0.7);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* CABECERA DE AUTORÍA */
+.cabecera-colegio {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 20px 25px;
+    border-radius: 15px;
+    border-left: 6px solid #6366f1;
+    margin-bottom: 35px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.cabecera-colegio:hover {
+    transform: translateY(-3px);
+}
+
+.logo-colegio {
+    width: 65px;
+    height: auto;
+    object-fit: contain;
+    background: #ffffff;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.datos-creador p {
+    margin: 4px 0;
+    font-size: 0.95em;
+    color: #cbd5e1;
+}
+
+.datos-creador strong {
+    color: #818cf8;
+    font-weight: 700;
+}
+
+/* TÍTULOS Y TEXTOS */
+h1 {
+    color: #ffffff;
+    text-align: center;
+    font-size: 3em;
+    border-bottom: 2px solid rgba(99, 102, 241, 0.3);
+    padding-bottom: 15px;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+}
+
+h2 {
+    color: #818cf8;
+    margin-top: 40px;
+    font-size: 1.8em;
+    border-left: 4px solid #6366f1;
+    padding-left: 12px;
+}
+
+/* SECCIONES Y CAJAS */
+.seccion-bacan {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    background: rgba(15, 23, 42, 0.6);
+    padding: 25px;
+    border-radius: 16px;
+    margin-bottom: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.seccion-bacan:hover {
+    border-color: #6366f1;
+    transform: translateY(-2px);
+}
+
+.invertido {
+    flex-direction: row-reverse;
+}
+
+.img-recortada {
+    width: 280px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+    flex-shrink: 0;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+/* FICHA TÉCNICA */
+ul.ficha-tecnica {
+    list-style-type: none;
+    padding: 0;
+}
+
+.ficha-tecnica li {
+    background: rgba(15, 23, 42, 0.6);
+    margin-bottom: 12px;
+    padding: 15px 20px;
+    border-left: 5px solid #818cf8;
+    border-radius: 8px;
+    font-size: 1.05em;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.ficha-tecnica li strong {
+    color: #38bdf8;
+}
+
+/* ALERTA */
+.alerta {
+    background: rgba(239, 68, 68, 0.1);
+    border: 1px solid #ef4444;
+    border-left: 6px solid #ef4444;
+    padding: 25px;
+    border-radius: 12px;
+    margin-top: 40px;
+}
+
+.alerta h2 {
+    color: #f87171;
+    margin-top: 0;
+    border-left: none;
+    padding-left: 0;
+    font-size: 1.5em;
+}
+
+.alerta p {
+    color: #fca5a5;
+    margin-bottom: 0;
+}
+
+/* RESPONSIVE MÓVIL */
+@media (max-width: 768px) {
+    .cabecera-colegio {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .seccion-bacan, .invertido {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .img-recortada {
+        width: 100%;
+        height: 220px;
+    }
+    
+    .contenedor {
+        padding: 20px;
+    }
+    
+    h1 {
+        font-size: 2.2em;
+    }
+}
